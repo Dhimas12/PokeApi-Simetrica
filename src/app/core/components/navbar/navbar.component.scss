@@ -1,0 +1,13 @@
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+mat-toolbar{
+    background-color: white;
+    color: red;
+    opacity: 0.8;
+    border-bottom: 1px solid #ccc;
+}

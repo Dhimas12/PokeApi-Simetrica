@@ -1,0 +1,40 @@
+.search-row{
+    border-bottom: 1px solid #ccc;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+.card-width{
+    width: 30%;
+    margin-top: 20px;
+}
+
+
+.title-container{
+    color:red !important;
+    width: 100% !important;
+    text-align: center !important;
+    cursor: pointer !important;
+
+}
+
+mat-spinner{
+    color: red;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    button{
+        margin-left:10px;
+    }
+}

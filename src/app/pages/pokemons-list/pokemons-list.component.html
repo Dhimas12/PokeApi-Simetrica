@@ -1,0 +1,33 @@
+<mat-spinner color="warn" class="centered" *ngIf="loading"></mat-spinner>
+
+<div class="title-container" 
+     *ngIf="!loading"
+     (click)="displayItems()">
+  <h1 class="centered title">
+    <mat-icon >cached</mat-icon>
+    Mostrar {{ !favoritiesOrAll ? 'Favoritos' : 'Todos' }}
+  </h1>
+</div>
+
+
+<div class="card-container"
+     *ngIf="!loading">
+  <app-pokemon-card *ngFor="let pokemon of pokemons" 
+                    [pokemon]="pokemon"
+                    (favoritePokemon)="markAsFavorite($event)"
+                    class="card-width">
+  </app-pokemon-card>
+</div>
+
+<div class="btn-container" *ngIf="!loading">
+  <button mat-mini-fab color="warn" 
+          (click)="goPrevious()"
+          [disabled]="!previous">
+    <mat-icon>arrow_left</mat-icon>
+  </button>
+  <button mat-mini-fab color="warn" 
+          (click)="goNext()"
+          [disabled]="!next">
+    <mat-icon>arrow_right</mat-icon>
+  </button>
+</div>

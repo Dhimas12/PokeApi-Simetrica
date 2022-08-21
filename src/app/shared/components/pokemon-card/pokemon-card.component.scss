@@ -1,0 +1,59 @@
+mat-card{
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+        
+    mat-card-header{
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+    
+        mat-card-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: red;
+
+            &:hover {
+                font-size: 1.6em;
+                cursor: pointer;
+                transition: 1s;
+            }
+        }
+    }
+
+    mat-card-content{
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    mat-card-actions{
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+        img{
+            margin-right: 5px;
+        }
+    }
+}
+
+mat-icon{
+    color: red;
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.sprite{
+    width: 200px !important;
+    height: auto;
+}
+
+.w-200{
+    width: 200px !important;
+}
